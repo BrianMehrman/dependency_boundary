@@ -1,0 +1,2 @@
+class RoadWheel < Wheel
+end

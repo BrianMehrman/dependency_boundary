@@ -1,0 +1,2 @@
+class FixedGear < Gear
+end

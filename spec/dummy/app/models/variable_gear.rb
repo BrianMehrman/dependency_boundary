@@ -1,0 +1,2 @@
+class VariableGear < Gear
+end

@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require "thor"
+require "yaml"
+require "bundler/setup"
+require "dependency_boundary"
+
+class Dependencies < Thor
+  option :f, :type => :array
+  option :config
+  desc "check -f FILES --config CONFIG_PATH", "outputs any files that violates dependency boundaries"
+  def check
+    cli = DependencyBoundary::CLI.new
+
+    cli.run({
+      config: options[:config],
+      files: options[:files]
+    })
+  end
+end
+
+Dependencies.start(ARGV)

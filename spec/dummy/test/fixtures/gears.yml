@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sprocket_count: 1
+  cog: false
+  chainring: false
+
+two:
+  name: MyString
+  sprocket_count: 1
+  cog: false
+  chainring: false
